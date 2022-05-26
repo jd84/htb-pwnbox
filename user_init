@@ -4,7 +4,7 @@
 # copy files to home folder
 cp -af ~/my_data/home/. ~/
 
-# add Powerline font for tmux
+# add nerd font for tmux
 font_dir="$HOME/.local/share/fonts"
 mkdir -p $font_dir
 cp "$HOME/my_data/fonts/DejaVuSansMono Nerd Font Complete.ttf" ~/.local/share/fonts/

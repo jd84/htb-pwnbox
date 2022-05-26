@@ -20,6 +20,8 @@ mkdir -p home
 cd home
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.bash_aliases
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.tmux.conf
+wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.base16-gruvbox-dark-hard.conf
+
 
 # create RSA keypair for persistence over SSH
 mkdir -p .ssh
