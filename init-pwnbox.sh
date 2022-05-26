@@ -11,7 +11,8 @@ wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/user_init --backup
 chmod +x user_init
 
 # get Nerdfont
-curl -fLo "DejaVuSansMono Nerd Font Complete.ttf" \
+mkdir -p fonts
+curl -fLo "fonts/DejaVuSansMono Nerd Font Complete.ttf" \
     https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20Nerd%20Font%20Complete.ttf
 
 # prepare home directory
