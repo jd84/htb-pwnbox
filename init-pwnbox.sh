@@ -7,7 +7,7 @@ mkdir -p $WDIR
 cd $WDIR
 
 # get preconfigured user_init file
-wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/htb-pwnbox/user_init --backups=1
+wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/user_init --backups=1
 chmod +x user_init
 
 # get Nerdfont
