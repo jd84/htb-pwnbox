@@ -1,0 +1,18 @@
+#!/bin/bash
+#This script is executed every time your instance is spawned.
+
+# copy files to home folder
+cp -af ~/my_data/home/. ~/
+
+# add Powerline font for tmux
+font_dir="$HOME/.local/share/fonts"
+mkdir -p $font_dir
+cp "$HOME/my_data/fonts/DejaVuSansMono Nerd Font Complete.ttf" ~/.local/share/fonts/
+
+# refresh font cache
+if which fc-cache >/dev/null 2>&1 ; then
+    fc-cache -f "$font_dir"
+fi
+
+# load mate-terminal profiles
+source ~/my_data/import-mate-terminal.sh
