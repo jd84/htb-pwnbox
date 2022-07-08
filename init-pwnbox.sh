@@ -18,9 +18,9 @@ curl -fLo "fonts/DejaVuSansMono Nerd Font Complete.ttf" \
 # prepare home directory
 mkdir -p home
 cd home
-wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.bash_aliases
-wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.tmux.conf
-wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.base16-gruvbox-dark-hard.conf
+wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.bash_aliases --backups=1
+wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.tmux.conf --backups=1
+wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.base16-gruvbox-dark-hard.conf --backups=1
 
 # get nvim config
 mkdir -p .config/nvim
@@ -31,8 +31,8 @@ mkdir -p .ssh
 ssh-keygen -t rsa -f .ssh/id_rsa
 
 cd $WDIR
-wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/export-mate-terminal.sh
-wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/import-mate-terminal.sh
+wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/export-mate-terminal.sh --backups=1
+wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/import-mate-terminal.sh --backups=1
 chmod +x export-mate-terminal.sh
 chmod +x import-mate-terminal.sh
 
