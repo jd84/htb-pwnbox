@@ -22,6 +22,9 @@ wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.bash_aliases
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.tmux.conf
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.base16-gruvbox-dark-hard.conf
 
+# get nvim config
+mkdir -p .config/nvim
+curl -fLo ".config/nvim/init.vim" https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.config/nvim/init.vim
 
 # create RSA keypair for persistence over SSH
 mkdir -p .ssh
