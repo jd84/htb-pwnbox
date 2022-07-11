@@ -28,7 +28,7 @@ mkdir -p .config/nvim
 curl -fLo ".config/nvim/init.vim" https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.config/nvim/init.vim
 
 # get starship config
-curl -fLo ".config/starship.yml" https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.config/starship.yml
+curl -fLo ".config/starship.toml" https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.config/starship.toml
 
 
 # create RSA keypair for persistence over SSH
