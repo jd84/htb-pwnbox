@@ -18,6 +18,7 @@ curl -fLo "fonts/DejaVuSansMono Nerd Font Complete.ttf" \
 # prepare home directory
 mkdir -p home
 cd home
+wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.bashrc --backups=1
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.bash_aliases --backups=1
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.tmux.conf --backups=1
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.base16-gruvbox-dark-hard.conf --backups=1
