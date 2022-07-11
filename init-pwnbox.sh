@@ -26,6 +26,10 @@ wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.base16-gruvbox-da
 mkdir -p .config/nvim
 curl -fLo ".config/nvim/init.vim" https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.config/nvim/init.vim
 
+# get starship config
+curl -fLo ".config/starship.yml" https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.config/starship.yml
+
+
 # create RSA keypair for persistence over SSH
 mkdir -p .ssh
 ssh-keygen -t rsa -f .ssh/id_rsa

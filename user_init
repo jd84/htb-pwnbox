@@ -20,3 +20,6 @@ source ~/my_data/import-mate-terminal.sh
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
+
+# install starship
+curl -sS https://starship.rs/install.sh | sh

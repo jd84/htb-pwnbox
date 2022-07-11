@@ -1,0 +1,53 @@
+format = """
+[┌──](fg:#696969)$time$username$hostname$custom$directory
+[└─](fg:#696969)$shell$character"""
+
+add_newline = true
+
+[character] # The name of the module we are configuring is "character"
+success_symbol = '[\$](yellow)'
+error_symbol = '[\$](red)'
+
+[package]
+format = " [$symbol$version]($style) "
+
+[time]
+disabled = false
+format = '[\[](white)[$time](grey)[\]](white)[─](fg:#696969)'
+time_format = "%R"
+
+[hostname]
+ssh_only = false
+format = '[@](yellow)[$hostname](red)[\]](white)[─](fg:#696969)'
+disabled = false
+
+[directory]
+truncation_length = 8
+truncate_to_repo = false
+style = "yellow"
+format = '[\[](white)[$path]($style)[$read_only]($read_only_style)[\]](white)'
+
+[git_branch]
+disabled = false
+format = '[\($branch\)](bold fg:#f38900) '
+
+[rust]
+format = "[$symbol]($style)"
+
+[username]
+format = '[\[](white)[$user](red)'
+show_always = true
+
+[custom.tun0]
+command = 'ip a | grep tun0 | grep inet | cut -d " " -f 6 | cut -d "/" -f 1'
+when = """ true """
+style = "grey"
+format = '[\[](white)[$output]($style)[\]](white)[─](fg:#696969)'
+
+[shell]
+powershell_indicator = "_"
+zsh_indicator = "*"
+unknown_indicator = "mystery shell"
+style = "blue"
+disabled = false
+format = '[\[](fg:#696969)[$indicator]($style)[\]](fg:#696969) '
