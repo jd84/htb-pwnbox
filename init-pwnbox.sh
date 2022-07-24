@@ -23,6 +23,10 @@ wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.bash_aliases --ba
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.tmux.conf --backups=1
 wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.base16-gruvbox-dark-hard.conf --backups=1
 
+
+# install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git .fzf
+
 # get nvim config
 mkdir -p .config/nvim
 curl -fLo ".config/nvim/init.vim" https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.config/nvim/init.vim
