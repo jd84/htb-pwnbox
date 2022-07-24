@@ -27,6 +27,7 @@ wget https://raw.githubusercontent.com/jd84/htb-pwnbox/master/.base16-gruvbox-da
 
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git .fzf
+.fzf/install --bin --no-zsh --no-fish
 
 # get nvim config
 mkdir -p .config/nvim
