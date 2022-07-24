@@ -15,5 +15,5 @@ if which fc-cache >/dev/null 2>&1 ; then
 fi
 
 # load mate-terminal profiles
-source ~/my_data/import-mate-terminal.sh
+bash ~/my_data/import-mate-terminal.sh
 
