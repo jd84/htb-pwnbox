@@ -17,5 +17,3 @@ fi
 # load mate-terminal profiles
 source ~/my_data/import-mate-terminal.sh
 
-# install starship
-curl -sS https://starship.rs/install.sh | sh
